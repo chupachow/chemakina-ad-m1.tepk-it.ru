@@ -24,6 +24,13 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
     <title><?= Html::encode($this->title) ?></title>
+    <style>
+        body, h1, h2, h3, h4, h5, h6, input, textarea, button {
+            font-family: 'SegoeUI', sans-serif!important;
+            background-color: #FFFFFF;
+
+        }
+    </style>
     <?php $this->head() ?>
 </head>
 <body class="d-flex flex-column h-100">
@@ -43,7 +50,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             ['label' => 'About', 'url' => ['/site/about']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest
-                ? ['label' => 'Login', 'url' => ['/site/login']]
+                ? ['label' => '', 'url' => ['/site/login']]
                 : '<li class="nav-item">'
                     . Html::beginForm(['/site/logout'])
                     . Html::submitButton(
