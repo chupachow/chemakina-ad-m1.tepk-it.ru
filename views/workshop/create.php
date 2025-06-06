@@ -5,8 +5,8 @@ use yii\helpers\Html;
 /** @var yii\web\View $this */
 /** @var app\models\WorkshopModel $model */
 
-$this->title = 'Create Workshop Model';
-$this->params['breadcrumbs'][] = ['label' => 'Workshop Models', 'url' => ['index']];
+$this->title = 'Создать';
+$this->params['breadcrumbs'][] = ['label' => 'Цех Модели', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="workshop-model-create">
